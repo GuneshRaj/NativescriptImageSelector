@@ -1,0 +1,19 @@
+<!--
+The markup in NativeScript apps contains a series of user interface components, each
+of which NativeScript renders with a platform-specific iOS or Android native control.
+You can find a full list of user interface components you can use in your app at
+https://docs.nativescript.org/ui/components.
+-->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page"
+    xmlns:Cam="@nstudio/nativescript-camera-plus"
+>
+    <StackLayout class="p-20">
+        <Cam:CameraPlus id="camera"
+            debug="true"
+            width="0"
+            height="0"
+        >
+        </Cam:CameraPlus>
+        <Button text="Gallery" tap="openGallery" class="btn" />
+    </StackLayout>
+</Page>
